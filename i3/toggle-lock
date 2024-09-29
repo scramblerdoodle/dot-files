@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Small script for toggling the screen lock timeout
+# not used since I couldn't find a good way to indicate the current state
+
+
+SCREEN_TIMEOUT_DISABLED=$(xset q | grep 'timeout:[[:blank:]]*0' | wc -l)
+
+if [ $SCREEN_TIMEOUT_DISABLED = "0" ]
+then
+    echo "Screen timeout diabled"
+    xset s off
+
+else
+    echo "Screen timeout enabled"
+    xset s on
+
+fi

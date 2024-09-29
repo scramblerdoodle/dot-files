@@ -1,0 +1,22 @@
+[global_config]
+[keybindings]
+  next_tab = <Primary>bracketright
+  prev_tab = <Primary>bracketleft
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = UbuntuMono Nerd Font 13
+    scrollback_lines = 1500
+    scrollback_infinite = True
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
